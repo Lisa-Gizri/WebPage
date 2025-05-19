@@ -1,0 +1,172 @@
+:root {
+    --primary: #6c5ce7;
+    --accent: #ff7675;
+    --bg: #f9f9f9;
+    --text: #2d3436;
+    --light: #dfe6e9;
+    --highlight: #6c5ce7;
+    --dot: #feca57;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+  }
+
+  .logo h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  #menu_B {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .menu_L {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--highlight);
+    font-weight: 500;
+    position: relative;
+  }
+
+  nav a:first-child {
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  nav a:not(:last-child)::after {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: var(--dot);
+    border-radius: 50%;
+    margin: 0 8px;
+  }
+
+  .sign-in {
+    background: var(--highlight);
+    color: white;
+    padding: 12px 32px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .hero {
+    position: relative;
+    padding: 4rem 2rem;
+    background: url("/public/assets/images/Rectangle.png") no-repeat top right;
+    background-size: contain;
+  }
+
+  .hero h1 {
+    font-size: 96px;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .hero h1 span {
+    color: var(--accent);
+    background: #d1f4de;
+    border-radius: 20px;
+    padding: 0 10px;
+  }
+
+  .hero h2 {
+    font-size: 64px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .hero-grid > div {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .grid-text {
+    font-size: 18px;
+  }
+
+  .grid-btn {
+    margin-top: 1rem;
+    background: var(--highlight);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .span-2 {
+    grid-column: span 2;
+  }
+
+  .span-3 {
+    grid-column: span 3;
+  }
+
+  .span-1 {
+    grid-column: span 1;
+  }
