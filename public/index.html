@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Page</title>
+    <!-- Reset and external stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
     <link rel="stylesheet" href="assets/style.css">
     <link
@@ -15,7 +16,7 @@
 
 <body>
 
-    <!-- Desktop Header -->
+    <!-- DESKTOP HEADER -->
     <header class="desktop-header">
         <div class="logo">
             <img src="assets/images/icon-layout.png" alt="Grid icon">
@@ -30,7 +31,7 @@
         <a href="#" class="sign-in">Sign In</a>
     </header>
 
-    <!-- Mobile Header -->
+    <!-- MOBILE HEADER -->
     <header class="mobile-header">
         <div class="menu-toggle" id="menuToggle">
             <span class="burger-icon">&#9776;</span>
@@ -39,6 +40,7 @@
         <a href="#" class="sign-in">Sign In</a>
     </header>
 
+    <!-- MOBILE NAVIGATION MENU -->
     <nav class="mobile-menu" id="mobileMenu">
         <a href="#">How it works</a>
         <a href="#">Who we are</a>
@@ -46,6 +48,7 @@
         <a href="#">Contact us</a>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-header">
             <h1>Combine <span class="highlight">fine</span> images</h1>
@@ -68,16 +71,13 @@
             <div class="img3"><img src="assets/images/Card 3.png" alt="A"></div>
             <div class="img4"><img src="assets/images/Card 6.png" alt="Shoe"></div>
             <div class="img5"><img src="assets/images/Card 4.png" alt="Book"></div>
-
-            <div class="img6">
-                <img src="assets/images/Card 5.png" alt="Woman">
-            </div>
-
+            <div class="img6"><img src="assets/images/Card 5.png" alt="Woman"></div>
             <div class="img7"><img src="assets/images/Card 7.png" alt="Window"></div>
         </div>
     </section>
 
-    <div class="container text-center my-4">
+    <!-- IMAGE COLLAGE SECTION -->
+    <section class="container text-center my-4">
         <div class="row g-3">
             <div class="col-6">
                 <div class="grid-item">
@@ -90,7 +90,6 @@
                 </div>
             </div>
         </div>
-
         <div class="row g-3 mt-1">
             <div class="col-4">
                 <div class="grid-item">
@@ -108,9 +107,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="features-section">
+    <!-- FEATURES SECTION -->
+    <section class="features-section">
         <h2 class="section-heading">Delivering good designs since 1954 🚚💨</h2>
         <p class="section-subtext">
             We’re the first multi-purpose design kit solutions for businesses. We help you bridge gaps between your
@@ -118,6 +118,7 @@
         </p>
 
         <div class="features-grid">
+            <!-- Feature Item -->
             <div class="feature-box">
                 <div class="feature-icon pink">
                     <img src="assets/images/icon-phone-call.png" alt="Support Icon" width="50" height="50">
@@ -142,7 +143,7 @@
                 <div class="feature-icon purple">
                     <img src="assets/images/icon-zap.png" alt="Components Icon" width="50" height="50">
                 </div>
-                <h5><strong>Coponents-driven</strong></h5>
+                <h5><strong>Components-driven</strong></h5>
                 <p class="info">Delivering faster and more personalized support with shared screens and cool design
                     systems for Figma</p>
                 <a href="#" class="btn-outline">Learn more</a>
@@ -153,83 +154,85 @@
                     <img src="assets/images/icon-thumbs-up.png" alt="Swap Icon" width="50" height="50">
                 </div>
                 <h5><strong>Swap the icon</strong></h5>
-                <p class="info">You can toggle to any icon within Instances and customize outlined stroke to more bolder
+                <p class="info">You can toggle to any icon within Instances and customize outlined stroke to be bolder
                     or lighter</p>
                 <a href="#" class="btn-outline">Learn more</a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="pricing-section">
+    <!-- PRICING SECTION -->
+    <section class="pricing-section">
         <h2 class="section-heading">Affordable pricing</h2>
         <p class="section-subtext">Bill me <span class="highlight">monthly</span> • yearly</p>
         <div class="pricing-grid">
             <div class="plan-box">
                 <img src="assets/images/Plan1.png" alt="Free Plan">
             </div>
-
             <div class="plan-box featured-plan">
                 <img src="assets/images/Plan2.png" alt="Individual Plan">
-                <!-- <img src="assets/images/99 dp.png" alt="Dash Decoration" class="plan-decor"> -->
             </div>
-
             <div class="plan-box">
                 <img src="assets/images/Plan3.png" alt="Corporate Plan">
             </div>
         </div>
+    </section>
 
-        <footer class="footer">
-            <div class="container py-5">
-                <div class="row">
-                    <!-- Left: Social + Information -->
-                    <div class="col-md-7">
-                        <h4 class="footer-label">FOLLOW US</h4>
-                        <div class="social-icons mb-4">
-                            <img src="assets/images/icon-facebook.png" alt="Facebook">
-                            <img src="assets/images/icon-linkedin.png" alt="LinkedIn">
-                            <img src="assets/images/icon-slack.png" alt="Slack">
-                            <img src="assets/images/icon-twitter.png" alt="Twitter">
-                        </div>
-
-                        <h4 class="footer-label">INFORMATION</h4>
-                        <div class="row info-columns">
-                            <div class="col-md-4">
-                                <ul>
-                                    <li>About Fapster app</li>
-                                    <li>Get in Touch</li>
-                                    <li>Things We Like</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <li><a href="#">Onhovered / Active</a></li>
-                                    <li>Privacy Policy</li>
-                                    <li>Terms of Service</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <ul>
-                                    <li>We are hiring!</li>
-                                    <li>Resources</li>
-                                </ul>
-                            </div>
-                        </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container py-5">
+            <div class="row">
+                <!-- Left side: social icons and links -->
+                <div class="col-md-7">
+                    <h4 class="footer-label">FOLLOW US</h4>
+                    <div class="social-icons mb-4">
+                        <img src="assets/images/icon-facebook.png" alt="Facebook">
+                        <img src="assets/images/icon-linkedin.png" alt="LinkedIn">
+                        <img src="assets/images/icon-slack.png" alt="Slack">
+                        <img src="assets/images/icon-twitter.png" alt="Twitter">
                     </div>
 
-                    <!-- Right: Email + Contact form -->
-                    <div class="col-md-5 footer-right">
-                        <h4 class="footer-label">FOLLOW US</h4>
-                        <h2><a href="mailto:hello@fapsterapp.com">hello@fapsterapp.com</a></h2>
-
-                        <h4 class="footer-label mt-4">KEEP IN TOUCH</h4>
-                        <div class="contact-form">
-                            <img src="assets/images/Group 11000.png" alt="Name Field" class="form-img">
+                    <h4 class="footer-label">INFORMATION</h4>
+                    <div class="row info-columns">
+                        <div class="col-md-4">
+                            <ul>
+                                <li>About Fapster app</li>
+                                <li>Get in Touch</li>
+                                <li>Things We Like</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li><a href="#">Onhovered / Active</a></li>
+                                <li>Privacy Policy</li>
+                                <li>Terms of Service</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li>We are hiring!</li>
+                                <li>Resources</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
+                <!-- Right side: email + form -->
+                <div class="col-md-5 footer-right">
+                    <h4 class="footer-label">FOLLOW US</h4>
+                    <h2><a href="mailto:hello@fapsterapp.com">hello@fapsterapp.com</a></h2>
+
+                    <h4 class="footer-label mt-4">KEEP IN TOUCH</h4>
+                    <div class="contact-form">
+                        <img src="assets/images/Group 11000.png" alt="Name Field" class="form-img">
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+
+        <!-- Decorative wave image at bottom -->
         <img src="assets/images/Wave.png" alt="Yellow wave" class="footer-wave-img">
+    </footer>
 
 </body>
 
